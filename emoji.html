@@ -13,11 +13,47 @@
         text-align: center;
       }
 
+      html{
+        overflow: hidden;
+      }
+
       canvas:hover{
 
+      }
+
+      #pien{
+        position:fixed;
+        right:50px;
+        bottom:50px;
+        transition:1s;
+        opacity:0.7;
+      }
+      #stop{
+        position:fixed;
+        right:50px;
+        bottom:100px;
+        transition:1s;
+        opacity:0.7;
+      }
+      #start{
+        position:fixed;
+        right:50px;
+        bottom:150px;
+        transition:1s;
+        opacity:0.7;
+      }
+      .background{
+        width:1100px;
+        margin: 0 auto;
+        background-image: url(universe.jpg);
       }
     </style>
   </head>
   <body style="margin: 0;">
+    <div class="background">
+    </div>
+    <button type="button" name="button" id="pien" onclick="changePien()">PIEN</button>
+    <button type="button" name="button" id="stop" onclick="stopEmoji()">STOP</button>
+    <button type="button" name="button" id="start" onclick="startEmoji()">START</button>
   </body>
 </html>
